@@ -1,0 +1,82 @@
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background-color: rgb(185,179,175,.8);}
+h1 {
+    color: rgb(51, 34, 136);}
+
+h1#myName{
+    color: rgb(170, 68, 153);
+    text-shadow: 2px 2px 2px #332288}
+
+#pgNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;}
+
+#pgNav li, #pgNav a{
+    float:left;
+    display: block;
+    padding: 8px;}
+
+div {
+    float: left;
+    width: 100%;
+    white-space:nowrap;
+    margin: 5px;
+    padding-bottom: 2px;
+    }
+
+.column1of3, .column2of3, .column3of3 {    
+        max-width: 500px;
+        max-height: 500px; 
+        height: auto;
+        width:auto;
+        float: left;
+        margin: 10px;}
+
+#homeImg img{
+    border: 1px solid #000000;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    width:auto;
+    margin: 10px;}
+
+img:hover{
+    border: 4px solid #882154 !important;
+    opacity: .5; }
+
+fieldset{
+    border: 1px dashed #332288;
+    border-radius: 10px;
+    max-width: 500px}
+legend{ color: #332288; }
+label{   
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;}
+#long{ width: auto}
+
+#button-submit input{
+    border: 2px solid #332288; 
+    border-radius: 10px;
+    width:auto; 
+    height: auto; 
+    margin: 10px}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif;}
+      
+
+<!-- Paul Tol's color blind friendly palette: 
+            136, 204, 238 : 88CCEE (light blue) 
+            51, 34, 136 : 332288 (dark blue) 
+            68, 170, 153 : 44AA99 (light green)
+            17, 119, 51 :117733 (dark green)
+            153, 153, 51 : 999933 (tan/yellow-green) 
+            221, 204, 119 : DDCC77 (light tan/yellow)
+            204, 102, 119 : CC6677 (pink) 
+            136, 34, 85 : 882255 (magenta)
+            170, 68, 153 : AA4499 (purple) --> 

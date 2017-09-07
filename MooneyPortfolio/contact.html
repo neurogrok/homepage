@@ -1,0 +1,83 @@
+<!doctype html> 
+<html lang="en">
+        <head> 
+                <title> NeuroGrok Contact </title> 
+                <link href="home.css" type="text/css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+            </head>
+
+<body> 
+
+        <header id="pgNav" class="font-raleway"> 
+                <ul> 
+                    <li> <a href="home.html">Home</a> </li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <h1 id="myName" class="font-raleway"> Marie Mooney is NeuroGrok </h1></li>
+                    <li> <a href="blog.html">Science Blog</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </header>
+
+        <form action="mailto:neurogrok@gmail.com" method="post">
+            <fieldset>
+                <legend>
+                    Your Details:
+                </legend>
+            
+                <div><label>Name:</label>
+                     <input type="text" name="name" size="30" maxlength="100">
+                </div>
+            
+                <div> <label>Email:</label>
+                    <input type="email" name="email" size="30" maxlength="100">
+                </div>
+            <br />
+            </fieldset>
+            <br />
+        <fieldset>
+            <legend>
+                    Your Comments:
+            </legend>
+            
+            <div>
+            <label for="hear-about">
+                    How did you hear about us?
+            </label>
+                <div>     
+                    <select name="referrer" id="hear-about">
+                        <option value="google">
+                        Google
+                        </option>
+                        <option value="friend">
+                        Friend
+                        </option>
+                        <option value="advert">
+                        Linked from another site
+                        </option>
+                        <option value="other">
+                        Other
+                        </option>
+                    </select>
+                </div> 
+            </div>
+            <div>
+                <label>Would you visit again?</label>
+                <br />
+                    <label>Yes<input type="radio" name="rating" value="yes" /></label>
+                 
+                    <label>No<input type="radio" name="rating" value="no" /></label>
+                <br />
+                <p>Comments:</p>
+                    <textarea rows="4" cols="40" id="comments">
+                    </textarea>
+            </div>
+            
+            <label id="long">Sign me up for email updates</label> <input type="checkbox" name="subscribe" />  
+            <br />
+            <div id="button-submit"><input type="submit" value="Submit it!" /></div>
+        </fieldset>
+        </form>
+
+</body> 
+
+</html> 
