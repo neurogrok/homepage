@@ -4,6 +4,7 @@
                 <title> NeuroGrok Contact </title> 
                 <link href="home.css" type="text/css" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+                <script type="text/javascript" src="portfolioScript.js"></script>
             </head>
 
 <body> 
@@ -17,19 +18,20 @@
                     <li> <a href="contact.html">Contact</a></li>
                 </ul>
             </header>
-
-        <form action="mailto:neurogrok@gmail.com" method="post">
+        
+    <div id="formShift">
+        <form name="contact" onsubmit="return checkForm()" action="mailto:neurogrok@gmail.com" method="post">
             <fieldset>
                 <legend>
                     Your Details:
                 </legend>
             
-                <div><label>Name:</label>
-                     <input type="text" name="name" size="30" maxlength="100">
+                <div><label for="name">Name:</label>
+                     <input type="text" id="name" name="name" size="30" maxlength="100">
                 </div>
             
-                <div> <label>Email:</label>
-                    <input type="email" name="email" size="30" maxlength="100">
+                <div> <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" size="30" maxlength="100">
                 </div>
             <br />
             </fieldset>
@@ -57,27 +59,31 @@
                         <option value="other">
                         Other
                         </option>
-                    </select>
-                </div> 
+                    </select> 
+                </div>
             </div>
             <div>
-                <label>Would you visit again?</label>
-                <br />
-                    <label>Yes<input type="radio" name="rating" value="yes" /></label>
-                 
-                    <label>No<input type="radio" name="rating" value="no" /></label>
-                <br />
-                <p>Comments:</p>
-                    <textarea rows="4" cols="40" id="comments">
+                    <label for="visit">Would you visit again?   </label> 
+                    <br /> 
+                    <label for="visit">Yes<input type="radio" id="visit" name="rating" value="yes" /></label>
+                    <label for="visitN"> No<input type="radio" id="visitN" name="rating" value="no" /></label>
+            </div> 
+
+            <div>
+                            <label for="comments">Your Comments:   </label><br />
+                    <textarea id="commentText" rows="4" cols="40" id="comments">
                     </textarea>
             </div>
             
-            <label id="long">Sign me up for email updates</label> <input type="checkbox" name="subscribe" />  
-            <br />
-            <div id="button-submit"><input type="submit" value="Submit it!" /></div>
+            <div> 
+                <label for="signUp" id="long">Sign me up for email updates</label> 
+                <input type="checkbox" id="signUp" name="subscribe" />  
+            
+            <div id="button-submit"><input type="submit" value="Submit it!"/></div>
+            </div>
         </fieldset>
         </form>
-
+    </div>
 </body> 
 
 </html> 

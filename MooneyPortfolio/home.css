@@ -1,6 +1,17 @@
+.font-raleway {
+    font-family: 'Raleway', sans-serif;}
+
 body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    background-color: rgb(185,179,175,.8);}
+    background-image: url("./images/notes.jpg");
+    background-repeat: repeat-y; 
+    background-position: 50% 0; 
+    background-color: rgba(255, 255, 255, 0.80);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -450px; 
+}
 h1 {
     color: rgb(51, 34, 136);}
 
@@ -28,12 +39,13 @@ div {
     }
 
 .column1of3, .column2of3, .column3of3 {    
-        max-width: 500px;
-        max-height: 500px; 
+        max-width: 333px;
+        max-height: 366px; 
         height: auto;
         width:auto;
-        float: left;
-        margin: 10px;}
+        float: left; 
+        margin: 5px;
+    }
 
 #homeImg img{
     border: 1px solid #000000;
@@ -47,9 +59,31 @@ img:hover{
     border: 4px solid #882154 !important;
     opacity: .5; }
 
+#endQuote{
+    max-width: 900px; 
+    text-align: right; 
+}
+
+#formShift{
+    margin-left: 50px;  
+}
+
+#pgAbout {
+    display: block; 
+    max-width: 50em; 
+}
+
+p, ol{ 
+    background-color: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    border-radius: 10px; 
+    word-break: break-word;
+    white-space: normal; 
+}
+
 fieldset{
-    border: 1px dashed #332288;
-    border-radius: 10px;
+    border: 0px dashed #332288; 
+    /*border-radius: 10px;*/ 
     max-width: 500px}
 legend{ color: #332288; }
 label{   
@@ -57,7 +91,8 @@ label{
     width: 100px;
     text-align: right;
     padding-right: 10px;}
-#long{ width: auto}
+
+#long { width: auto}
 
 #button-submit input{
     border: 2px solid #332288; 
@@ -66,9 +101,10 @@ label{
     height: auto; 
     margin: 10px}
 
-.font-raleway {
-    font-family: 'Raleway', sans-serif;}
-      
+footer{
+    display: block;
+    margin-right: 20px;
+}
 
 <!-- Paul Tol's color blind friendly palette: 
             136, 204, 238 : 88CCEE (light blue) 

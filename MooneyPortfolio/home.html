@@ -4,12 +4,13 @@
     <title> NeuroGrok Homepage </title> 
     <link href="home.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+    <script type="text/javascript" src="portfolioScript.js"></script>    
 </head>
 
 <body>
-    <header id="pgNav" class="font-raleway"> 
+    <header id="pgNav" class="font-raleway" onclick="changeFont()"> 
         <ul> 
-            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="home.html" >Home</a> </li>
             <li> <a href="about.html">About</a></li>
             <li> <h1 id="myName" class="font-raleway"> Marie Mooney is NeuroGrok </h1></li>
             <li> <a href="blog.html">Science Blog</a></li>
@@ -24,22 +25,26 @@
     <div id="homeImg" >
         <div class="column1of3" > 
             <img src="./images/hand-brain.jpg" alt="JDumit hand brain" style="max-width:100%" style="max-height:100%"> 
+            <br> 
             <p> A brain made out of hands, <br> posted on J. Dumit's blog</p>
         </div>
         <div class="column2of3">
             <img src="./images/with-Neil.jpg" alt="Typhoon Tyson" style="max-width:100%" style="max-height:100%"> 
+            <br> 
             <p> Me and my buddy, <br> Neil DeGrasse Tyson</p>
         </div>
         <div class="column3of3">
             <img src="./images/DNA-binary.jpg" alt="DNA Data" style="max-width:100%" style="max-height:100%"> 
+            <br> 
             <p> The DNA code is actually <br> quaternary, not binary...</p>
         </div>
     </div>
 
+    <div id="endQuote">
     <h2> <blockquote class = "font-raleway">"Science, my lad, is made up of mistakes, <br> but they are mistakes which it is useful to make, <br> because they lead little by little to the truth"</blockquote></h2>
-
-        <footer> copyright NeuroGrok 2017</footer> 
-
+    <br> 
+        <footer onmouseover="makeDate()"> copyright NeuroGrok 2017</footer> 
+    </div>
     </article> 
    
 </body> 
